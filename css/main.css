@@ -7,5 +7,12 @@ html {
 }
 
 body {
-  background-color: lavender;
+  width: 1920 px;
+  height: 2360 px;
+  background-color: 
+}
+
+.logo_name {
+  width: 208 px;
+  height: 88 px;
 }
