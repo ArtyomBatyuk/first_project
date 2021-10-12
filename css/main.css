@@ -11,11 +11,17 @@ body {
   height: 2360 px;
 }
 
+/*HEADER*/ 
+
 .main_header{
   display: flex;
 }
+
+/*main logo*/
+
 .main_logo{
   display: flex;
+  margin-top: 26px;
 }
 .logo_img {
   width: 40px;
@@ -25,26 +31,162 @@ body {
   align-items: center;
   background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);
   border-radius: 6px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 .logo_img p {
-font-family: Red Hat Display;
+font-family: Red;
 font-style: normal;
 font-weight: bold;
 font-size: 32px;
 line-height: 36px;
-
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #FFFFFF;
+}
+.logo_name{
+  display: flex ;
+  width: 124px;
+  height: 36px;
+  font-family: Red;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #0C2146;
 
 }
-.logo_name {
-  width: 208 px;
-  height: 88 px;
+
+/*head nav*/
+
+.head_nav{
+  display: flex;
+  margin-right: 151px;
+  margin-top: 10px;
 }
+a{
+  text-decoration: none;
+}
+  .sell_shopka{
+  width: 143px;
+  height: 32px;
+  list-style: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  display: inline;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.004em;
+  color: #5A5B6A;
+  margin-right: 33px;
+}
+.register{
+  text-decoration: none;
+  width: 80px;
+  height: 32px;
+  list-style: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 158%;
+  display: inline;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.004em;
+  color: #5A5B6A;
+}
+
+/*search bar*/
+
+.search_bar{
+  display: flex;
+  
+}
+.search{
+  display: flex;
+  width: 668px;
+  height: 48px;
+  margin-top: 28px;
+  margin-right: 30px;
+  background: #EDEDF0;
+  border-radius: 99px;
+}
+.search img{
+  width: 17px;
+  height: 17px;
+  display: flex;
+  margin: 15px;
+}
+.search input{
+  display: flex;
+  width: 616px;
+  height: 32px;
+  left: 44px;
+  margin-top: 4px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 158%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #19191D;
+  background: #EDEDF0;
+}
+.search_bar a{
+  text-decoration: none;
+  width: 210px;
+  height: 32px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 158%;
+  display: inline;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #2264D1;
+  margin-top: 26px;
+}
+
+/*user_nav*/
+
+.user_nav{
+  display: flex;
+}
+.singIn button {
+  background-color: white;
+  border: 1px solid #9DC2FF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 21px;
+  margin-top: 28px;
+}
+.myCard button {
+  background-color: white;
+  border: 1px solid #9DC2FF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 28px;
+  margin-top: 28px;
+}
+.avatar{
+  margin-top: 24px;
+}
+
+/*MAIN NAV*/
 
 .main_nav{
+  display: flex;
+}
+.nav{
+  list-style: none;
   display: flex;
 }
