@@ -57,8 +57,7 @@ color: #FFFFFF;
   line-height: 36px;
   display: flex;
   align-items: center;
-  color: #0C2146;
-
+  color: #0C2146; 
 }
 
 /*head nav*/
@@ -194,8 +193,49 @@ a{
 
 .main_nav{
   display: flex;
+  width: 1493px;
+  /* height: 64px; */
+  margin-bottom: 40px;
+  background: thistle;
+  margin: auto;
 }
 .nav{
+  height: 64px;
   list-style: none;
   display: flex;
+  /* margin-bottom: 40px; */
+}
+
+/*MAIN CONTENT*/
+.main_content{
+  display: flex;
+  width: 1493px;
+  height: 2160px;
+  
+  margin: auto;
+}
+
+/*LEFT*/
+.left{
+  display: flex;
+  width: 304px;
+  background: pink;
+  margin-right: 75px;
+}
+.right{
+  display: flex;
+  width: 1114px;
+  background: rgb(99, 230, 99);
+}
+
+/*FOOTER*/
+.main_footer{
+  height: 292px;
+  background: lightgray;
+}
+.info{
+  width: 1114px;
+  background: blue;
+  margin-right: 214px;
+  float: right;
 }
