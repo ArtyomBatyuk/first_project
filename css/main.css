@@ -15,6 +15,7 @@ body {
 
 .main_header{
   display: flex;
+  height: 96px;
 }
 
 /*main logo*/
@@ -64,7 +65,7 @@ color: #FFFFFF;
 
 .head_nav{
   display: flex;
-  margin-right: 151px;
+  margin-right: 107px;
   margin-top: 10px;
 }
 a{
@@ -125,20 +126,27 @@ a{
 }
 .search input{
   display: flex;
-  width: 616px;
+  width: 585px;
   height: 32px;
   left: 44px;
-  margin-top: 4px;
+  margin-top: 8px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 158%;
-  display: flex;
   align-items: center;
   letter-spacing: 0.0075em;
   color: #19191D;
   background: #EDEDF0;
+  border: none;
+  border-radius: 99px;
+}
+.clean {
+  width: 14px;
+  height: 14px;
+  left: 17px;
+  color: #19191D;
 }
 .search_bar a{
   text-decoration: none;
@@ -154,6 +162,7 @@ a{
   letter-spacing: 0.0075em;
   color: #2264D1;
   margin-top: 26px;
+  margin-right: 123px;
 }
 
 /*user_nav*/
