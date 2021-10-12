@@ -9,10 +9,42 @@ html {
 body {
   width: 1920 px;
   height: 2360 px;
-  background-color: 
 }
 
+.main_header{
+  display: flex;
+}
+.main_logo{
+  display: flex;
+}
+.logo_img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);
+  border-radius: 6px;
+}
+.logo_img p {
+font-family: Red Hat Display;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 36px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
 .logo_name {
   width: 208 px;
   height: 88 px;
+}
+
+.main_nav{
+  display: flex;
 }
