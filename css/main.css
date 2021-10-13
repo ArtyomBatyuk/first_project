@@ -10,6 +10,9 @@ body {
 
 }
 
+ul{
+  list-style-type: none;
+}
 /*HEADER*/ 
 
 .main_header{
@@ -37,15 +40,15 @@ body {
   margin-right: 12px;
 }
 .logo_img span {
-font-family: Red;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 36px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
+  font-family: Red;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
 }
 .logo_name{
   display: flex ;
@@ -141,7 +144,9 @@ a{
 }
 .clean {
   left: 17px;
+  padding-top: 15px;
   color:#2979FF;
+
 }
 .search_bar a{
   text-decoration: none;
@@ -214,7 +219,7 @@ a{
 
 /*left bar*/
 .left_bar{
-  display: flex;
+  /* display: flex; */
   width: 304px;
   background: #F7F7FA;
   margin-right: 75px;
@@ -222,7 +227,6 @@ a{
 
 /*content bar*/
 .content_bar{
-  /* display: flex; */
   width: 1114px;
   background: #F7F7FA;
 }
