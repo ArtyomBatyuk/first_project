@@ -7,22 +7,22 @@ html {
 }
 
 body {
-  width: 1920 px;
-  height: 2360 px;
+
 }
 
 /*HEADER*/ 
 
 .main_header{
   display: flex;
-  height: 96px;
+  margin-bottom: 28px;
+  align-items: center;
 }
 
 /*main logo*/
 
 .main_logo{
   display: flex;
-  margin-top: 26px;
+  padding-top: 24px;
 }
 .logo_img {
   width: 40px;
@@ -35,7 +35,7 @@ body {
   margin-left: 12px;
   margin-right: 12px;
 }
-.logo_img p {
+.logo_img span {
 font-family: Red;
 font-style: normal;
 font-weight: bold;
@@ -65,12 +65,12 @@ color: #FFFFFF;
 .head_nav{
   display: flex;
   margin-right: 107px;
-  margin-top: 10px;
+  margin-top: 28px;
 }
 a{
   text-decoration: none;
 }
-  .sell_shopka{
+.sell_shopka{
   width: 143px;
   height: 32px;
   list-style: none;
@@ -106,13 +106,12 @@ a{
 
 .search_bar{
   display: flex;
-  
 }
 .search{
   display: flex;
   width: 668px;
   height: 48px;
-  margin-top: 28px;
+  margin-top: 20px;
   margin-right: 30px;
   background: #EDEDF0;
   border-radius: 99px;
@@ -126,9 +125,7 @@ a{
 .search input{
   display: flex;
   width: 585px;
-  height: 32px;
   left: 44px;
-  margin-top: 8px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -142,10 +139,8 @@ a{
   border-radius: 99px;
 }
 .clean {
-  width: 14px;
-  height: 14px;
   left: 17px;
-  color: #19191D;
+  color:#2979FF;
 }
 .search_bar a{
   text-decoration: none;
@@ -194,16 +189,18 @@ a{
 .main_nav{
   display: flex;
   width: 1493px;
-  /* height: 64px; */
   margin-bottom: 40px;
-  background: thistle;
   margin: auto;
+  display: flex;
 }
 .nav{
-  height: 64px;
+  width: 100%;
   list-style: none;
   display: flex;
-  /* margin-bottom: 40px; */
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
 }
 
 /*MAIN CONTENT*/
