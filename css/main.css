@@ -16,6 +16,7 @@ body {
   display: flex;
   margin-bottom: 28px;
   align-items: center;
+
 }
 
 /*main logo*/
@@ -189,7 +190,6 @@ a{
 .main_nav{
   display: flex;
   width: 1493px;
-  margin-bottom: 40px;
   margin: auto;
   display: flex;
 }
@@ -201,6 +201,7 @@ a{
   margin: 0 auto;
   text-align: center;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 /*MAIN CONTENT*/
@@ -208,23 +209,37 @@ a{
   display: flex;
   width: 1493px;
   height: 2160px;
-  
   margin: auto;
 }
 
-/*LEFT*/
-.left{
+/*left bar*/
+.left_bar{
   display: flex;
   width: 304px;
-  background: pink;
+  background: #F7F7FA;
   margin-right: 75px;
 }
-.right{
-  display: flex;
-  width: 1114px;
-  background: rgb(99, 230, 99);
-}
 
+/*content bar*/
+.content_bar{
+  /* display: flex; */
+  width: 1114px;
+  background: #F7F7FA;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.card{
+  width: 30%;
+  height: 472px;
+  text-align: center;
+}
+.card span{
+  display: block;
+  text-align: center;
+}
 /*FOOTER*/
 .main_footer{
   height: 292px;
@@ -232,7 +247,8 @@ a{
 }
 .info{
   width: 1114px;
-  background: blue;
+  background: #EDEDF0;
+  ;
   margin-right: 214px;
   float: right;
 }
