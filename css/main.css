@@ -1,6 +1,7 @@
 @import "./normalize.min.css";
 
 html {
+  box-sizing: border-box;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -12,8 +13,8 @@ a {
   color: black;
 }
 
-body {
-
+select {
+  cursor: pointer;
 }
 
 ul{
@@ -78,6 +79,10 @@ ul{
   align-items: center;
   margin-right: 107px;
   margin-top: 28px;
+}
+.nav li:hover {
+  background: #EBF2FF;
+  border-radius: 10px;
 }
 a{
   text-decoration: none;
@@ -156,6 +161,11 @@ a{
   color:#2979FF;
 
 }
+.consumer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .search_bar a{
   text-decoration: none;
   width: 210px;
@@ -178,21 +188,35 @@ a{
 .user_nav{
   display: flex;
 }
-.singIn button {
+.singIn {
   background-color: white;
   border: 1px solid #9DC2FF;
-  box-sizing: border-box;
+  color:#2264D1;
+  font-weight: bold;
   border-radius: 4px;
   margin-right: 21px;
   margin-top: 28px;
 }
-.myCard button {
+.myCard {
+  box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
   background-color: white;
-  border: 1px solid #9DC2FF;
-  box-sizing: border-box;
+  border: none;
+  font-weight: bold;
   border-radius: 4px;
   margin-right: 28px;
   margin-top: 28px;
+  position: relative;
+  color: #2264D1;
+}
+.myCard::after{
+  position: absolute;
+  content: '5';
+  top: -10px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color:#FFFFFF;
 }
 .avatar{
   margin-top: 24px;
@@ -224,6 +248,7 @@ a{
   display: flex;
   width: 1493px;
   margin: auto;
+  margin-bottom: 40px;
 }
 
 /*left bar*/
@@ -245,7 +270,6 @@ a{
   color: #2264D1;
   background: #FFFFFF;
   border: 1px solid #9DC2FF;
-  box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 40px;
 }
@@ -340,7 +364,6 @@ a{
 .manufacturing span{
   font-size: 16px;
   line-height: 150%;
-  
   letter-spacing: 0.0275em;
   color: #19191D;
 }
@@ -351,7 +374,8 @@ a{
   background: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 8px;
-}
+} 
+
 /*content_header*/
 .filter{
   width: 100%;
@@ -366,19 +390,16 @@ a{
 .useless_first{
   display: inline-flex;
   border: 1px solid #5A5B6A;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .condition{
   display: inline-flex;
   border: 1px solid #B4B4BB;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .delivery{
   display: inline-flex; 
   border: 1px solid #B4B4BB;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .right_filter{
@@ -390,19 +411,23 @@ a{
   display: inline-flex;
   background: #EBF2FF;
   border-radius: 4px;
-  padding: 3px 6px;
+  padding: 4px 6px;
   margin-right: 24px;
 }
 .content_form{
   display: inline-flex;
   background: #EBF2FF;
   border-radius: 4px;
-  padding: 0 25px;
+  padding: 0 7px;
 }
-
-.img_wrap img{
+.img_wrap img {
   min-width: 18px;
   min-height: 18px;
+}
+.active {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(27, 78, 163, 0.24), 0px 2px 4px rgba(41, 121, 255, 0.24);
+  border-radius: 4px;
 }
 
 
@@ -416,6 +441,11 @@ a{
 .card{
   width: 21%;
   height: 472px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
+border-radius: 8px;
 }
 .product_descr{
   font-size: 16px;
@@ -441,7 +471,38 @@ a{
 
 }
 
+/*ADDITIONAL INFO*/
+.add_content{
+  width: 1114px;
+  display: flex;
+  padding-left: 550px;
+
+  /* flex-direction: row; */
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+.add_wrapper{
+  /* display: inline-flex; */
+  width: 360px;
+  height: 155px;
+  background: #EDEDF0;
+  border-radius: 8px;
+  padding: 26px 16px 24px 16px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.img_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*FOOTER*/
+
 .main_footer{
   height: 292px;
   background: lightgray;
@@ -449,7 +510,11 @@ a{
 .info{
   width: 1114px;
   background: #EDEDF0;
-  ;
-  margin-right: 214px;
+  margin-right: 214px; 
   float: right;
+}
+
+.manufactur__item {
+  display: flex;
+  align-items: center;
 }
