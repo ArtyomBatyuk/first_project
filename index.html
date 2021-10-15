@@ -166,13 +166,15 @@
       <div class="left_bar">
         <div class="departments">
           <div class="dep_arr">
-            <img src="./img/icons/departments_arrow.svg" alt="">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 7H15V5H3V7ZM0 0V2H18V0H0ZM7 12H11V10H7V12Z" fill="#2264D1"/>
+            </svg>
           </div>
           <span>DEPARTMENTS</span>
         </div>
         <ul class="categories">
           <span>All Categories</span>
-          <span class="additional_line">Ecommerce patterns</span>
+          <p class="additional_line">Ecommerce patterns</p>
         </ul>
         <ul class="electronics">
           <span>Electronics</span>
@@ -194,7 +196,7 @@
             <li>  
               <ul class="computers"></ul>
               <span>Computers</span>
-              <span class="additional_line">Tablets & Networking</span>
+              <p class="additional_line">Tablets & Networking</p>
             </li>
             <li>
               <ul class="consumer_electronics"></ul>
@@ -210,12 +212,13 @@
             </li>
           </li>
         </ul>
-        <div class="expand">
-          <span>Expand</span>
-        </div>
+        <button class='expand'>Expand</button>
         <div class="filters">
           <div class="collapsed">
           <span>Collapsed filters</span>
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#2264D1"/>
+          </svg>
           </div>
           <div class="expanded">
           <span class="tittle">Expanded Filters</span>
@@ -248,28 +251,36 @@
               <label for='1' >1954</label>
             </li>
             <li>
-            <span>1955</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1955</label>
             </li>
             <li>
-            <span>1956</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1956</label>
             </li>
             <li>
-            <span>1957</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1957</label>
             </li>
             <li>
-            <span>1958</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1958</label>
             </li>
             <li>
-            <span>1959</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1959</label>
             </li>
             <li>
-            <span>1960</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1960</label>
             </li>
             <li>
-            <span>1961</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1961</label>
             </li>
             <li>
-            <span>1962-2020</span>
+              <input id='1' type='checkbox'/>
+              <label for='1' >1962-2020</label>
             </li>
           </ul>
           </div>
@@ -285,21 +296,27 @@
                 <select class="useless_first">
                   <option>Useless first</span>
                   <div class="img_arr">
-                    <img src="./img/icons/filter_arrow.svg" alt="">
+                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L5 5L10 0L0 0Z" fill="#787885"/>
+                    </svg>
                   </div>
                 </select>
-                <div class="condition">
-                  <span>Condition</span>
+                <select class="condition">
+                  <option>Condition</span>
                   <div class="img_arr">
-                    <img src="./img/icons/filter_arrow.svg" alt="">
+                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L5 5L10 0L0 0Z" fill="#787885"/>
+                    </svg>
                   </div>
-                </div>
-                <div class="delivery">
-                  <span>Delivery options</span>
+                </select>
+                <select class="delivery">
+                  <option>Delivery options</span>
                   <div class="img_arr">
-                    <img src="./img/icons/filter_arrow.svg" alt="">
+                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L5 5L10 0L0 0Z" fill="#787885"/>
+                    </svg>
                   </div>
-                </div>
+                </select>
               </div>
               <div class="right_filter">
                 <div class="action_buttons">
@@ -309,17 +326,41 @@
                 </div>
                 <div class="content_form">
                   <div class="img_wrap">
-                    <img src="./img/icons/line_form.svg" alt="">
+                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 0V4H17V0H5ZM5 14H17V10H5V14ZM5 9H17V5H5V9ZM0 4H4V0H0V4ZM0 14H4V10H0V14ZM0 9H4V5H0V9Z" fill="#787885"/>
+                    </svg>                      
                   </div>
-                  <div class="img_wrap">
-                    <img src="./img/icons/block_form.svg" alt="">
+                  <div class="img_wrap active">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 8H8V0H0V8ZM0 18H8V10H0V18ZM10 18H18V10H10V18ZM10 0V8H18V0" fill="#2979FF"/>
+                    </svg>
                   </div>
                 </div>
               </div>
             </div>
-          
-            <div class="related">
-
+            
+            <div class="related_wrapper">
+              <span class='related'>Related</span>
+              <ul class='related_li'>
+                <li>
+                  <span class="related_text">worldwide shipping</span>
+                </li>
+                <li>
+                  <span class="related_text">under $50</span>
+                </li>
+                <li>
+                  <span class="related_text">kitten</span>
+                </li>
+                <li>
+                  <span class="related_text">plastic plugs</span>
+                </li>
+                <li>
+                  <span class="related_text">pucker shoes</span>
+                </li>
+                <li>
+                  <span class="related_text">vintage typewriter</span>
+                </li>
+              </ul> 
             </div>
           </div>
 
@@ -438,7 +479,6 @@
               </span>
               <div class="rating"></div>
             </div>
-
             <div class="card">
               <div class="img">
                 <img src="./img/images/8.png" alt="">
