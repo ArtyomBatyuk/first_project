@@ -91,8 +91,7 @@ a {
   left: 17px;
 }
 .clean  {
-  left: 17px;
-  padding-top: 15px;
+
   color:#2979FF;
 
 }
@@ -184,7 +183,7 @@ a {
   width: 304px;
   margin-right: 75px;
 }
-.departments {
+h1 {
   width: 100%;
   height: 56px;
   display: inline-flex;
@@ -200,14 +199,15 @@ a {
   border-radius: 8px;
   margin-bottom: 40px;
   cursor: pointer;
-
 }
-.departments::before {
+
+h1::before {
   content: url(../img/icons/departments_arrow.svg)
 }
 .additional_line {
   font-size: 14px;
   color: #787885;
+  margin-block-end: 0;
 }
 .categories {
   align-items: center;
@@ -422,13 +422,14 @@ border-radius: 8px;
   width: 1114px;
   display: flex;
   justify-content: space-between;
+  cursor: default;
 }
 .add_wrapper {
   height: 155px;
   background: #EDEDF0;
   border-radius: 8px;
   padding: 0px 16px;
-  width: 25%;
+  width: 27%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -456,14 +457,60 @@ border-radius: 8px;
 /*FOOTER*/
 
 .main_footer {
-  height: 292px;
   display: flex;
-  justify-content: flex-end;
-  background: lightgray;
+  background: #F7F7FA;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.info {
-  width: 1114px;
-  background: #EDEDF0;
+.info, .horizont_line {
+  display: flex;
+  justify-content: space-between;
+  width: 1114px;  
   margin-right: 214px; 
+  margin-bottom: 30px;
 }
-
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #B1B1C4;
+}
+.customer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.customer_list {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.contacts, .facebook, .twitter {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.tracking {
+  display: flex;
+  align-items: center;
+  background: #EBF2FF;
+  border-radius: 4px; 
+  
+  padding: 11px 23px;
+  text-transform: capitalize;
+  color: #2264D1;
+}
+.business {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.cooperation {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.horizont_wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: #E6E6EA;
+  margin-bottom: 0px;
+}
