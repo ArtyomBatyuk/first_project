@@ -185,7 +185,6 @@ h1 {
   justify-content: space-around;
   align-items: center;
   font-family: Quicksand;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   color: #2264D1;
@@ -203,44 +202,43 @@ h1::before {
   color: #787885;
   margin: 0;
 }
-.categories {
-  align-items: center;
-  letter-spacing: 0.0275em;
-  color: #19191D;
+.with_right_arrow::before {
+  content: url(../img/icons/chevron-right_blue.svg);
 }
-.electronics span {
-  font-weight: 500;
-  font-size: 16px;
-  color: #19191D;
+.with_right_arrow, .with_down_arrow, .with_right_down_arrow, .with_right_up_arrow {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+.with_down_arrow::before {
+  content: url(../img/icons/chevron-down_blue.svg);
+}
+.show_more, .expand {
+  background: #EBF2FF;
+  border-radius: 4px;
+  border: none;
+  color: #2264D1;
 }
 .show_more {
   width: 138px;
   height: 40px;
-  left: 64px;
-  top: 416px;
-  background: #EBF2FF;
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.show_more span {
-  font-size: 14px;
-  color: #2264D1;
-  padding: 11px;
+.show_more::after {
+  content: url(../img/icons/chevron-down.svg);
 }
 .expand {
-  align-items: center;
   padding: 6px 12px;
   width: 75px;
   height: 40px;
-  left: 56px;
-  top: 672px;
-  background: #EBF2FF;
-  border-radius: 4px;
   margin-bottom: 32px;
 }
-.expand span {
-  font-size: 14px;
-  color: #2264D1;
-  padding: 11px;    
+.expand_wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 /*filters*/
@@ -251,27 +249,25 @@ h1::before {
   padding: 6px 8px;
   margin-bottom: 24px;
 }
+.with_right_down_arrow, .with_right_up_arrow {
+  width: 100%;
+  justify-content: space-between;
+}
+.with_right_down_arrow::after {
+  content: url(../img/icons/chevron-down_blue.svg);
+}
 .expanded {
   background: #F7F7FA;
   border-radius: 4px;
-}
-.tittle {
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.022em;
-  color: #19191D;
-}
-.expanded span {
-  font-size: 16px;
-  text-align: center;
-  color: #19191D;
 }
 .manufacturing_wrapper {
   background: #F7F7FA;
   border-radius: 4px;
 }
 
+.with_right_up_arrow::after {
+  content: url(../img/icons/chevron-up.svg);
+}
 /*content bar*/
 .content_bar {
   width: 1114px;
@@ -317,15 +313,19 @@ h1::before {
   border-radius: 4px;
   padding: 0px 6px;
   margin-right: 24px; 
+  cursor: pointer;
 }
 .content_form {
   display: inline-flex;
   background: #EBF2FF;
   border-radius: 4px;
   padding: 0px;
+  cursor: pointer;
 }
 .img_wrap {
-  padding: 2px 6px; 
+  display: flex;
+  align-items: center;
+  padding: 0 20px; 
   
 }
 .active {
@@ -335,6 +335,7 @@ h1::before {
 }
 .related {
   padding: 16px 0;
+  cursor: default;
 }
 .related_wrapper {
   width: 100%;
@@ -346,7 +347,6 @@ h1::before {
   color: #19191D;
 }
 .related_li {
-  cursor: pointer;
   margin: 0;
   padding: 0;
   display: inline-flex;
@@ -357,6 +357,7 @@ h1::before {
   padding: 6px 12px;  
   margin-right: 8px;
   color: #4A4B57;
+  cursor: pointer;
 }
 
 /*content*/
@@ -379,16 +380,23 @@ h1::before {
   box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
   border-radius: 8px;
 }
-
+.img {
+  min-height: 224px;
+}
 .product_descr {
+  height: 74px;
   color: #19191D;
 }
 .product_price {
+  height: 36px;
   font-weight: bold;
   font-size: 24px;
   display: flex;
   align-items: center;
   color: rgba(0, 0, 0, 0.87);
+}
+.descr {
+  height: 41px;
 }
 .rating_wrapper {
   display: flex;
@@ -492,12 +500,19 @@ h2 {
   display: inline-flex;
   justify-content: space-between;
 }
-.tracking {
+.call, .support {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1F1F1F;
+}
+.tracking_wrapper {
   display: flex;
   align-items: center;
   background: #EBF2FF;
   border-radius: 4px; 
   padding: 11px 23px;
+}
+.tacking {
   text-transform: capitalize;
   color: #2264D1;
 }
@@ -518,7 +533,7 @@ h2 {
   margin-bottom: 0px;
 }
 .email_wrapper, .program, .add_store {
-  padding: 10px 0;
+  padding: 5px 0;
   width: 33%;
   display: flex;
   align-items: center;
@@ -535,6 +550,7 @@ h2 {
   box-sizing: border-box;
   border-radius: 4px;
   background: #E6E6EA;
+  padding: 10px 30px;
 }
 .program, .add_store {
   border-left: 1px solid #D1D1E1;

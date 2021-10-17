@@ -157,52 +157,64 @@
       <div class="left_bar">
         <h1>DEPARTMENTS</h1>
         <ul class="categories">
-          <span>All Categories</span>
+          <span class="with_right_arrow">All Categories</span>
           <p class="additional_line">Ecommerce patterns</p>
-        </ul>
-        <ul class="electronics">
-          <span>Electronics</span>
-          <li>
-            <ul class="phones&smartphones">
-              <span>Cell Phones & Smartphones</span>
-              <li>
-                <span>Cell Phone Accessories</span>
-                <span>Cell Phone Gatgets</span>
-                <span>Applications</span>
-                <span>Smart Watches</span>
+          <span class="with_down_arrow">Electronics</span>
+          <ul class="electronics">
+            <li>
+              <span class="with_down_arrow">Cell Phones & Smartphones</span>
+              <ul class="phones_smartphones">
+                <li>
+                  <a href=""><span>Cell Phone Accessories</span></a>
+                </li>
+                <li>
+                  <a href=""><span>Cell Phone Gatgets</span></a>
+                </li>
+                <li>
+                  <a href=""><span>Applications</span></a>
+                </li>
+                <li>
+                  <a href=""><span>Smart Watches</span></a>
+                </li>
+                <li>
+                  <button class='show_more'>Show more</button>
+                </li>
+              </ul>
+              <li>  
+                <span class="with_right_arrow">Business & Industrial</span>
+                <ul class="business"></ul>
               </li>
-            </ul>
-            <button class='show_more'>Show more</button>
-            <li>  
-               <ul class="business"></ul>
-               <span>Business & Industrial</span>
+              <li>  
+                <span class="with_right_arrow">Computers</span>
+                <ul class="computers"></ul>
+                <p class="additional_line">Tablets & Networking</p>
+              </li>
+              <li>
+                <span class="with_right_arrow">Consumer Electroinics</span>
+                <ul class="consumer_electronics"></ul>
+              </li>
+              <li>
+                <span class="with_right_arrow">Home & Garden</span>
+                <ul class="home_garden"></ul>
+              </li>
+              <li>
+                <span class="with_right_arrow">Collectibles</span>
+                <ul class="colectibles"></ul>
+              </li>
+              <li>
+                <div class="expand_wrapper">
+                  <button class='expand'>Expand</button>
+                </div>
+              </li>
             </li>
-            <li>  
-              <ul class="computers"></ul>
-              <span>Computers</span>
-              <p class="additional_line">Tablets & Networking</p>
-            </li>
-            <li>
-              <ul class="consumer_electronics"></ul>
-              <span>Consumer Electroinics</span>
-            </li>
-            <li>
-              <ul class="home&garden"></ul>
-              <span>Home & Garden</span>
-            </li>
-            <li>
-              <ul class="colectibles"></ul>
-              <span>Collectibles</span>
-            </li>
-          </li>
+          </ul>  
         </ul>
-        <button class='expand'>Expand</button>
         <div class="filters">
           <div class="collapsed">
-              <span>Collapsed filters</span>
+              <span class="with_right_down_arrow">Collapsed filters</span>
           </div>
           <div class="expanded">
-          <span class="tittle">Expanded Filters</span>
+          <span class="with_right_up_arrow">Expanded Filters</span>
           <ul>
             <li>
               <input id='1' type='checkbox'/>
@@ -231,9 +243,9 @@
           </ul>
           </div>
           <div class="manufacturing_wrapper">
-          <span class="tittle">Year of manufacturing</span>
-            <ul>
-              <li class='manufactur__item'>
+          <span class="with_right_up_arrow">Year of manufacturing</span>
+            <ul class='manufactur__item'>
+              <li>
                 <input id='7' type='checkbox'/>
                 <label for='7' >1954</label>
               </li>
@@ -362,7 +374,7 @@
                 <span class="product_price">
                   $49.50
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Eligible for Shipping To Mars or somewhere else
                 </span>
                 <div class="rating_wrapper">
@@ -390,7 +402,7 @@
                 <span class="product_price">
                   $13.95
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   1258 bids, 359 watchers $5.95 for shipping
                 </span>
                 <div class="rating">
@@ -420,7 +432,7 @@
                 <span class="product_price">
                   $128.99
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Eligible for nothing :(
                 </span>
                 <div class="rating">
@@ -450,7 +462,7 @@
                 <span class="product_price">
                   $12.48
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Wordwide shitting available. Buyers protection possible!
                 </span>
                 <div class="rating">
@@ -480,7 +492,7 @@
                 <span class="product_price">
                   $12.48
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Wordwide shifting available. Buyers protection possible!
                 </span>
                 <div class="rating">
@@ -510,7 +522,7 @@
                 <span class="product_price">
                   $128.99
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Showcasing onHovered state
                 </span>
                 <div class="rating">
@@ -540,7 +552,7 @@
                 <span class="product_price">
                   $13.95
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   1258 bids, 359 watchers $5.95 for shipping
                 </span>
                 <div class="rating">
@@ -569,7 +581,7 @@
                 <span class="product_price">
                   $9.50
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Eligible for Shipping To Mars or somewhere else
                 </span>
                 <div class="rating">
@@ -599,7 +611,7 @@
                 <span class="product_price">
                   $128.99
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Eligible for nothing :(
                 </span>
                 <div class="rating">
@@ -629,7 +641,7 @@
                 <span class="product_price">
                   $11.68
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Wordwide shifting available. Buyers protection possible!
                 </span>
                 <div class="rating">
@@ -659,7 +671,7 @@
                 <span class="product_price">
                   $1.25
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   Eligible for Shipping To Mars or somewhere else
                 </span>
                 <div class="rating">
@@ -689,7 +701,7 @@
                 <span class="product_price">
                   $23.25
                 </span>
-                <span class="additional_line">
+                <span class="additional_line descr">
                   1258 bids, 359 watchers $5.95 for shipping
                 </span>
                 <div class="rating">
@@ -759,8 +771,10 @@
               <span>support@shopka.com</span>
               <p class="additional_line">Any questions 24/7</p>
             </div>
-            <div class="tracking">
-              <a href="">Track your order</a>
+            <div class="tracking_wrapper">
+              <a href=""> 
+                <span class="tracking"> Track your order</span>
+              </a>
             </div>
             <div class="facebook">
               <a href="">
