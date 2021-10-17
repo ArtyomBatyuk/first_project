@@ -1,14 +1,15 @@
 @import "./normalize.css";
 
-html  {
-  box-sizing: border-box;
-  color: #222;
-  font-size: 1em;
-}
+
 
 body {
   max-width: 1920px;
   margin: auto;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;  
+  box-sizing: border-box;
 }
 
 a  {
@@ -91,9 +92,7 @@ a {
   left: 17px;
 }
 .clean  {
-
   color:#2979FF;
-
 }
 .consumer {
   display: flex;
@@ -101,33 +100,30 @@ a {
   padding-left: 30px;
 }
 
-
 /*user_nav*/
 
 .user_nav {
   display: flex;
 }
-.singIn, .myCart {
+.sing_in, .my_cart {
   background-color: white;
   font-weight: bold;
   border-radius: 4px;
   padding: 0 20px;
 }
-.singIn {
-  
+.sing_in {
   border: 1px solid #9DC2FF;
   color:#2264D1;
   margin-right: 21px;
-
 }
-.myCart { 
+.my_cart { 
   box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
   border: none;
   margin-right: 16px;
   position: relative;
   color: #2264D1;
 }
-.myCart::after {
+.my_cart::after {
   position: absolute;
   content: '5';
   top: 0;
@@ -169,7 +165,6 @@ a {
   border-radius: 10px;
 }
 
-
 /*MAIN CONTENT*/
 .main_content {
   display: flex;
@@ -200,14 +195,13 @@ h1 {
   margin-bottom: 40px;
   cursor: pointer;
 }
-
 h1::before {
   content: url(../img/icons/departments_arrow.svg)
 }
 .additional_line {
   font-size: 14px;
   color: #787885;
-  margin-block-end: 0;
+  margin: 0;
 }
 .categories {
   align-items: center;
@@ -217,8 +211,6 @@ h1::before {
 .electronics span {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.022em;
   color: #19191D;
 }
 .show_more {
@@ -252,18 +244,13 @@ h1::before {
 }
 
 /*filters*/
-.left_bar span {
-  padding: 0 6px;
-}
 .collapsed {
   box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 4px;
   font-size: 16px;
-  line-height: 24px;
   padding: 6px 8px;
   margin-bottom: 24px;
 }
-
 .expanded {
   background: #F7F7FA;
   border-radius: 4px;
@@ -285,17 +272,17 @@ h1::before {
   border-radius: 4px;
 }
 
-
 /*content bar*/
 .content_bar {
   width: 1114px;
 } 
 .content_wrapper {
-  padding: 16px;
+  padding: 5px 16px 16px;
   box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 8px;
   margin-bottom: 40px;
 }
+
 /*content_header*/
 .filter {
   width: 100%;
@@ -319,12 +306,10 @@ h1::before {
   border-radius: 4px;
   color: #787885;
 }
-
 .right_filter {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-
 }
 .action_buttons {
   display: inline-flex;
@@ -372,7 +357,6 @@ h1::before {
   padding: 6px 12px;  
   margin-right: 8px;
   color: #4A4B57;
-
 }
 
 /*content*/
@@ -388,36 +372,51 @@ h1::before {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
 }
 .card:hover {
   box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
   border-radius: 8px;
 }
+
 .product_descr {
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.0275em;
   color: #19191D;
 }
 .product_price {
   font-weight: bold;
   font-size: 24px;
-  line-height: 150%;
   display: flex;
   align-items: center;
   color: rgba(0, 0, 0, 0.87);
 }
-.additional_info {
-  font-size: 14px;
-  line-height: 143%;
+.rating_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stars {
+  display: flex;
+}
+.star1, .star2, .star3, .star4 {
+  content: url(../img/icons/star.svg);
+}
+.star5 {
+  content: url(../img/icons/star-half.svg);
+}
+.watch {
+  height: 32px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.018em;
-  color: #787885;
-
+  background: none;
+  color: #2264D1;
+  border: 1px solid #9DC2FF;
+  border-radius: 4px;
+  padding: 0 14px 0 6px;
 }
-
-/*additional content*/
+.watch::before {
+  content: url(../img/icons/heart.svg);
+}
 .add_content {
   width: 1114px;
   display: flex;
@@ -436,6 +435,7 @@ h1::before {
   justify-content: center;
 }
 .clear, .styled, .customize {
+  font-family: Quicksand;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -454,6 +454,7 @@ h1::before {
   content: url(../img/icons/customize.svg);
   margin: 0 auto;
 }
+
 /*FOOTER*/
 
 .main_footer {
@@ -516,9 +517,6 @@ h2 {
   background: #E6E6EA;
   margin-bottom: 0px;
 }
-/* .horizont_line {
-  padding: 10px 0;
-} */
 .email_wrapper, .program, .add_store {
   padding: 10px 0;
   width: 33%;
@@ -559,6 +557,9 @@ h2 {
 }
 .visa {
   justify-content: center;
+}
+.visa *{
+  padding: 0 10px;
 }
 .map, .police {
   width:25%
