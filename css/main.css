@@ -391,7 +391,7 @@ h1::before {
 }
 .card:hover {
   box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
-border-radius: 8px;
+  border-radius: 8px;
 }
 .product_descr {
   font-size: 16px;
@@ -429,7 +429,7 @@ border-radius: 8px;
   background: #EDEDF0;
   border-radius: 8px;
   padding: 0px 16px;
-  width: 27%;
+  width: 30%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -461,12 +461,15 @@ border-radius: 8px;
   background: #F7F7FA;
   flex-direction: column;
   align-items: flex-end;
+  margin: 0 auto;
 }
-.info, .horizont_line {
+.info, .horizont_line, .last_line {
   display: flex;
   justify-content: space-between;
   width: 1114px;  
   margin-right: 214px; 
+}
+.info {
   margin-bottom: 30px;
 }
 h2 {
@@ -493,7 +496,6 @@ h2 {
   align-items: center;
   background: #EBF2FF;
   border-radius: 4px; 
-  
   padding: 11px 23px;
   text-transform: capitalize;
   color: #2264D1;
@@ -513,4 +515,51 @@ h2 {
   width: 100%;
   background: #E6E6EA;
   margin-bottom: 0px;
+}
+/* .horizont_line {
+  padding: 10px 0;
+} */
+.email_wrapper, .program, .add_store {
+  padding: 10px 0;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mail::before{
+  content: url(../img/icons/mail.svg);
+}
+.vertical::before {
+  content: url(../img/icons/Vertical.svg);
+}
+.subscribe {
+  border: 1px solid #9DC2FF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #E6E6EA;
+}
+.program, .add_store {
+  border-left: 1px solid #D1D1E1;
+  justify-content: center;
+}
+.add_store {
+  border-right: 1px solid #D1D1E1;
+}
+.last_line {
+  background: #F7F7FA;
+}
+.shopka, .visa, .privacy {
+  padding: 10px 0;
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+.privacy {
+  justify-content: flex-end;
+}
+.visa {
+  justify-content: center;
+}
+.map, .police {
+  width:25%
 }
