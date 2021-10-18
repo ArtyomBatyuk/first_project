@@ -92,7 +92,10 @@ a {
   left: 17px;
 }
 .clean  {
+<<<<<<< HEAD
   border: none;
+=======
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
   color:#2979FF;
 }
 .consumer {
@@ -139,6 +142,10 @@ a {
 /*MAIN NAV*/
 
 .main_nav {
+<<<<<<< HEAD
+=======
+  display: flex;
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
   width: 1493px;
   margin: auto;
 }
@@ -160,12 +167,16 @@ a {
 .nav span{
   padding: 10px;
 }
+<<<<<<< HEAD
 .nav_li a{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .nav_li:hover  {
+=======
+.nav li:hover  {
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
   background: #EBF2FF;
   border-radius: 10px;
 }
@@ -198,18 +209,32 @@ h1 {
   border-radius: 8px;
   margin-bottom: 40px;
   cursor: pointer;
+<<<<<<< HEAD
 }
 h1::before {
   content: url(../img/icons/departments_arrow.svg)
 }
+=======
+}
+h1::before {
+  content: url(../img/icons/departments_arrow.svg)
+}
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
 .additional_line {
   font-size: 14px;
   color: #787885;
   margin: 0;
+<<<<<<< HEAD
 }
 .with_right_arrow::before {
   content: url(../img/icons/chevron-right_blue.svg);
 }
+=======
+}
+.with_right_arrow::before {
+  content: url(../img/icons/chevron-right_blue.svg);
+}
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
 .with_right_arrow, .with_down_arrow, .with_right_down_arrow, .with_right_up_arrow {
   cursor: pointer;
   display: inline-flex;
@@ -250,16 +275,27 @@ h1::before {
 .collapsed {
   box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 4px;
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
   padding: 6px 8px;
   margin-bottom: 24px;
 }
 .with_right_down_arrow, .with_right_up_arrow {
   width: 100%;
   justify-content: space-between;
+<<<<<<< HEAD
 }
 .with_right_down_arrow::after {
   content: url(../img/icons/chevron-down_blue.svg);
 }
+=======
+}
+.with_right_down_arrow::after {
+  content: url(../img/icons/chevron-down_blue.svg);
+}
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
 .expanded {
   background: #F7F7FA;
   border-radius: 4px;
@@ -306,7 +342,10 @@ h1::before {
   border: 1px solid #B4B4BB;
   border-radius: 4px;
   color: #787885;
+<<<<<<< HEAD
   background: #FFFFFF;
+=======
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
 }
 .right_filter {
   display: inline-flex;
@@ -448,7 +487,11 @@ h1::before {
   flex-direction: column;
   justify-content: center;
 }
+<<<<<<< HEAD
 .clear_usable, .styled, .customize {
+=======
+.clear, .styled, .customize {
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
   font-family: Quicksand;
   display: flex;
   flex-direction: column;
@@ -456,7 +499,11 @@ h1::before {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.87);
 }
+<<<<<<< HEAD
 .clear_usable::before {
+=======
+.clear::before {
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
   content: url(../img/icons/clear.svg);
   margin: 0 auto;
 }
@@ -508,6 +555,7 @@ h2 {
 }
 .call, .support {
   font-weight: bold;
+<<<<<<< HEAD
   color: #1F1F1F;
 }
 .tracking_wrapper {
@@ -572,6 +620,73 @@ h2 {
   width: 33%;
   display: flex;
   align-items: center;
+=======
+  font-size: 16px;
+  color: #1F1F1F;
+}
+.tracking_wrapper {
+  display: flex;
+  align-items: center;
+  background: #EBF2FF;
+  border-radius: 4px; 
+  padding: 11px 23px;
+}
+.tacking {
+  text-transform: capitalize;
+  color: #2264D1;
+}
+.business {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.cooperation {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.horizont_wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: #E6E6EA;
+  margin-bottom: 0px;
+}
+.email_wrapper, .program, .add_store {
+  padding: 5px 0;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mail::before{
+  content: url(../img/icons/mail.svg);
+}
+.vertical::before {
+  content: url(../img/icons/Vertical.svg);
+}
+.subscribe {
+  border: 1px solid #9DC2FF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #E6E6EA;
+  padding: 10px 30px;
+}
+.program, .add_store {
+  border-left: 1px solid #D1D1E1;
+  justify-content: center;
+}
+.add_store {
+  border-right: 1px solid #D1D1E1;
+}
+.last_line {
+  background: #F7F7FA;
+}
+.shopka, .visa, .privacy {
+  padding: 10px 0;
+  width: 33%;
+  display: flex;
+  align-items: center;
+>>>>>>> dac126f3068bc33306cedde28f09fb345ea6e017
 }
 .privacy {
   justify-content: flex-end;
