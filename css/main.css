@@ -17,7 +17,6 @@ a  {
 }
 
  a:hover {
-  /* filter: brightness(75%); */
   opacity: 0.85;
  }
 
@@ -37,11 +36,12 @@ ul {
   display: flex;
   margin-bottom: 28px;
   align-items: center;
-  justify-content: space-between;
 }
 
 /*head nav*/
-
+.sell_register {
+  margin-right: 91px;
+}
 .sell_shopka, .register, .search_bar, .search input {
   text-decoration: none;
   list-style: none;
@@ -52,6 +52,10 @@ ul {
 }
 .sell_shopka {
   font-weight: 500;
+  letter-spacing: 0.004em;
+}
+.register {
+  letter-spacing: 0.0075em;
 }
 .sell_shopka, .register, .consumer, .user_nav {
   padding: 0 16px;
@@ -61,7 +65,7 @@ ul {
 .search { 
   display: inline-flex;
   align-items: center;
-  padding: 12px 10px 12px 15px;
+  padding: 11px 16px 11px 16px;
   background: #EDEDF0;
   border-radius: 99px;
 }
@@ -78,6 +82,9 @@ ul {
   font-size: 20px;
   color: #2264D1; 
   cursor: default;
+  letter-spacing: 0.0075em;
+  margin-right: 93px;
+  padding: 0 30px;
 }
 
 /*user_nav*/
@@ -87,13 +94,12 @@ ul {
   align-items: center;
 }
 .sing_in, .my_cart {
-  width: 104px;
   background-color: white;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 20px;
   border-radius: 4px;
-  padding: 8px 0;
+  padding: 8px 12px;
   text-align: center;
 }
 .sing_in {
@@ -331,6 +337,7 @@ h1 {
   background: #ffff;
   padding: 3px;
   color: #787885;
+  cursor: default;
 }
 .right_filter {
   display: inline-flex;
