@@ -1,7 +1,5 @@
 @import "./normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand&family=Roboto&display=swap');
 body {
   max-width: 1920px;
   margin: auto;
@@ -174,7 +172,6 @@ ul {
 .left_bar {
   width: 304px;
   margin-right: 75px;
-  font-size: 16px;
   letter-spacing: 0.0275em;
   font-weight: normal;
   color: #19191D;
@@ -208,13 +205,14 @@ h1 {
 }
 .item {
   padding-left: 10px;
+  cursor: pointer;
 }
 .bold_text {
   font-weight: 600;
   letter-spacing: 0.022em;
 }
 .expand_wrapper {
-  padding: 5px 35px;
+  padding: 5px 40px;
 }
 .additional_line {
   font-size: 14px;
@@ -250,7 +248,6 @@ h1 {
 }
 .show_more {
   max-width: 138px;
-  /* height: 40px; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -350,7 +347,6 @@ h1 {
   display: flex;
   align-items: center;
   padding: 0 20px; 
-  
 }
 .active {
   background: #FFFFFF;
@@ -358,6 +354,9 @@ h1 {
   border-radius: 4px;
 }
 .related {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.018em;
   padding: 16px 0;
   cursor: default;
 }
@@ -370,12 +369,12 @@ h1 {
   margin-right: 5px;
   color: #19191D;
 }
-.related_li {
-  margin: 0;
-  padding: 0;
+.related_list {
   display: inline-flex;
 }
 .related_text {
+  font-size: 14px;
+  letter-spacing: 0.018em;
   background: #EDEDF0; 
   border-radius: 99px; 
   padding: 6px 12px;  
@@ -405,11 +404,13 @@ h1 {
   border-radius: 8px;
 }
 .img {
-  min-height: 224px;
+  max-width: 227px;
+  max-height: 224px;
 }
 .product_descr {
   height: 74px;
   color: #19191D;
+  letter-spacing: 0.0275em;
 }
 .product_price {
   height: 36px;
@@ -420,9 +421,25 @@ h1 {
   color: rgba(0, 0, 0, 0.87);
 }
 .descr {
-  height: 41px;
+  max-height: 41px;
+  letter-spacing: 0.018em;
 }
-.rating_wrapper {
+.discount, .cool_deal {
+  font-family: Roboto;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  border-radius: 4px;
+  padding: 6px;
+}
+.discount {
+  background: #ECF7ED;
+  color: #37833B;
+}
+.cool_deal {
+  background: #FDEDF2;
+  color: #C23564;
+}
+.rating_wrapper, .price_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -436,19 +453,23 @@ h1 {
 .star5 {
   content: url(../img/icons/star-half.svg);
 }
+.rating {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+}
 .watch {
-  height: 32px;
-  display: flex;
-  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.018em;
   background: none;
   color: #2264D1;
   border: 1px solid #9DC2FF;
   border-radius: 4px;
-  padding: 0 14px 0 6px;
+  padding: 7px 15px;
 }
-.watch::before {
-  content: url(../img/icons/heart.svg);
-}
+
+/*additional_content*/
 .add_content {
   width: 1114px;
   display: flex;
@@ -506,7 +527,9 @@ h1 {
   margin-bottom: 30px;
 }
 h2 {
+  font-weight: bold;
   font-size: 16px;
+  letter-spacing: 0.0275em;
   text-transform: uppercase;
   color: #B1B1C4;
 }
