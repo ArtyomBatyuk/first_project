@@ -1,6 +1,6 @@
 @import "./normalize.css";
-
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
 
 body {
   max-width: 1920px;
@@ -56,8 +56,6 @@ ul {
   color: #5A5B6A;
 }
 .sell_shopka {
-  /* margin-right: 33px; */
-  /* align-items: center; */
   font-weight: 500;
 }
 .sell_shopka, .register, .consumer, .user_nav {
@@ -125,6 +123,9 @@ ul {
   height: 20px;
   border-radius: 50%;
   color:#FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*MAIN NAV*/
@@ -173,73 +174,90 @@ ul {
 .left_bar {
   width: 304px;
   margin-right: 75px;
+  font-size: 16px;
+  letter-spacing: 0.0275em;
+  font-weight: normal;
+  color: #19191D;
 }
 h1 {
-  width: 100%;
-  height: 56px;
-  display: inline-flex;
-  justify-content: space-around;
+  display: flex;
   align-items: center;
+  margin: 0;
+  width: 100%;
   font-family: Quicksand;
   font-weight: bold;
   font-size: 24px;
   color: #2264D1;
-  background: #FFFFFF;
   border: 1px solid #9DC2FF;
   border-radius: 8px;
-  margin: 0 0 40px 0;
+  margin-bottom:40px;
   cursor: pointer;
+  padding: 9px 0;
 }
-h1::before {
-  content: url(../img/icons/departments_arrow.svg)
+.departments_arrow { 
+  padding: 0 12px;
+}
+.departments {
+  padding: 0px 35px;
 }
 .categories {
   margin-bottom: 32px;
 }
 .menu {
-  padding-left: 25px;
+  padding: 10px;
 }
-.link {
- height: 40px;
+.item {
+  padding-left: 10px;
+}
+.bold_text {
+  font-weight: 600;
+  letter-spacing: 0.022em;
+}
+.expand_wrapper {
+  padding: 5px 35px;
 }
 .additional_line {
   font-size: 14px;
   color: #787885;
-  margin: 0;
 }
-.with_right_arrow::before {
-  content: url(../img/icons/chevron-right_blue.svg);
+.category, .category_list {
+  display: flex;
+  padding: 5px 0;
 }
-.with_right_arrow, .with_down_arrow, .with_right_down_arrow, .with_right_up_arrow {
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
+.category_list {
+  padding: 5px 10px;
+}
+.electronics {
+  padding-left: 10px;
+}
+.line_wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .line_with_add {
   display: flex;
   flex-direction: column;
 }
-.with_down_arrow::before {
-  content: url(../img/icons/chevron-down_blue.svg);
-}
 .show_more, .expand {
   background: #EBF2FF;
   border-radius: 4px;
   border: none; 
+  font-family: Roboto;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.75px;
-  font-size: 14px;
   color: #2264D1;
 }
 .show_more {
-  width: 138px;
-  height: 40px;
+  max-width: 138px;
+  /* height: 40px; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 12px 5px;
 }
 .expand {
-  padding: 6px 12px;
+  padding: 12px 12px;
 }
 
 /*filters*/
@@ -248,13 +266,6 @@ h1::before {
   border-radius: 4px;
   padding: 6px 8px;
   margin-bottom: 24px;
-}
-.with_right_down_arrow, .with_right_up_arrow {
-  width: 100%;
-  justify-content: space-between;
-}
-.with_right_down_arrow::after {
-  content: url(../img/icons/chevron-down_blue.svg);
 }
 .expanded {
   background: #F7F7FA;
@@ -266,12 +277,6 @@ h1::before {
   border-radius: 4px;
 }
 
-.with_right_up_arrow::after {
-  content: url(../img/icons/chevron-up.svg);
-}
-.expanded_filters {
-
-}
 /*content bar*/
 .content_bar {
   width: 1114px;
@@ -495,7 +500,7 @@ h1::before {
   display: flex;
   justify-content: space-between;
   width: 1114px;  
-  margin-right: 214px; 
+  margin-right: 170px; 
 }
 .info {
   margin-bottom: 30px;
