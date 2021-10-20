@@ -220,6 +220,7 @@ h1 {
 }
 .additional_line {
   font-size: 14px;
+  letter-spacing: 0.018em;
   color: #787885;
 }
 .category, .category_list {
@@ -487,14 +488,14 @@ h1 {
   letter-spacing: 0.018em;  
   color: #2264D1;
 }
-/*additional_content*/
-.add_content {
+/*sub_content*/
+.sub_content {
   width: 1114px;
   display: flex;
   justify-content: space-between;
   cursor: default;
 }
-.add_wrapper {
+.sub_wrapper {
   background: #EDEDF0;
   border-radius: 8px;
   padding: 24px 13px;
@@ -546,7 +547,7 @@ h2 {
 .customer_list {
   display: inline-flex;
   justify-content: space-between;
-  padding: 0;
+  margin-bottom: 20px;
 }
 .contacts, .facebook, .twitter {
   display: inline-flex;
@@ -559,13 +560,17 @@ h2 {
 .tracking_wrapper {
   display: flex;
   align-items: center;
-  background: #EBF2FF;
-  border-radius: 4px; 
-  padding: 0 23px;
 }
-.tacking {
+.tracking {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.75px;
   text-transform: capitalize;
   color: #2264D1;
+  background: #EBF2FF;
+  border-radius: 4px; 
+  padding: 12px 23px;
 }
 .business {
   display: flex;
@@ -573,7 +578,11 @@ h2 {
   width: 30%;
   justify-content: space-between;
 }
-
+.footer_sub_line {
+  font-weight: normal;
+  font-size: 12px;
+  color: #5A5B6A;
+}
 .horizont_wrapper {
   display: inline-flex;
   justify-content: flex-end;
@@ -597,14 +606,23 @@ h2 {
   justify-content: space-between;
 }
 .subscribe_form {
+  font-size: 14px;
+  letter-spacing: 0.018em;
+  color: #787885;
   width: 50%;
   padding: 10px;
   background: #E6E6EA;
   border: none;
 } 
 .subscribe {
-  border: 1px solid #9DC2FF;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
   box-sizing: border-box;
+  letter-spacing: 0.0075em;
+  color: #2264D1;
+  border: 1px solid #9DC2FF;
   border-radius: 4px;
   background: #E6E6EA;
   padding: 10px 30px;
@@ -619,12 +637,16 @@ h2 {
 }
 .last_line {
   background: #F7F7FA;
+  font-size: 12px;
 }
 .shopka, .bank_cards, .privacy {
   padding: 10px 0;
   width: 33%;
   display: flex;
   align-items: center;
+}
+.shopka {
+  color: #B1B1C3;
 }
 .privacy {
   justify-content: flex-end;
@@ -636,5 +658,5 @@ h2 {
   padding: 0 10px;
 }
 .map, .police {
-  width:25%
+  padding: 0 10px;
 }
