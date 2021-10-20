@@ -138,10 +138,8 @@ ul {
 }
 .nav {
   width: 100%;
-  list-style: none;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
   padding: 0;
@@ -151,16 +149,24 @@ ul {
   height: 18px;
   padding: 5px;
 }
-.nav span{
-  padding: 5px;
+.nav_name {
+  padding: 5px 13px;
+  font-size: 14px;
+  letter-spacing: 0.018em;
 }
-.nav_li a{
+.nav_category {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.nav_li:hover  {
+.nav_active {
+  font-weight: 500;
   background: #EBF2FF;
+  border-radius: 10px;
+  color: #2979FF;
+}
+.nav_category:hover {
+  background: #F7F7FA;
   border-radius: 10px;
 }
 
@@ -182,7 +188,6 @@ ul {
 h1 {
   display: flex;
   margin: 0;
-  /* width: 100%; */
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -192,9 +197,6 @@ h1 {
   margin-bottom:40px;
   cursor: pointer;
   padding: 12px 19px;
-}
-h1:hover {
-  box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
 }
 .departments_text {
   padding: 0px 35px;
@@ -259,6 +261,7 @@ h1:hover {
   padding: 12px 12px;
 }
 
+/*CONTENT BAR*/
 /*filters*/
 .collapsed {
   box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
@@ -492,10 +495,9 @@ h1:hover {
   cursor: default;
 }
 .add_wrapper {
-  height: 155px;
   background: #EDEDF0;
   border-radius: 8px;
-  padding: 0px 16px;
+  padding: 24px 13px;
   width: 30%;
   display: flex;
   align-items: center;
@@ -504,23 +506,11 @@ h1:hover {
 }
 .clear_usable, .styled, .customize {
   font-family: 'Quicksand', sans-serif;
-  display: flex;
-  flex-direction: column;
   font-weight: bold;
   font-size: 20px;
+  letter-spacing: 0.0075em;
   color: rgba(0, 0, 0, 0.87);
-}
-.clear_usable::before {
-  content: url(../img/icons/clear.svg);
-  margin: 0 auto;
-}
-.styled::before {
-  content: url(../img/icons/styled.svg);
-  margin: 0 auto;
-}
-.customize::before {
-  content: url(../img/icons/customize.svg);
-  margin: 0 auto;
+  padding: 11px 0;
 }
 
 /*FOOTER*/
@@ -592,7 +582,7 @@ h2 {
   margin-bottom: 0px;
 }
 .mail {
-  margin-right: 10px;
+  margin-right: 9px;
 }
 .email_wrapper {
   width: 100%;
@@ -630,7 +620,7 @@ h2 {
 .last_line {
   background: #F7F7FA;
 }
-.shopka, .visa, .privacy {
+.shopka, .bank_cards, .privacy {
   padding: 10px 0;
   width: 33%;
   display: flex;
@@ -639,10 +629,10 @@ h2 {
 .privacy {
   justify-content: flex-end;
 }
-.visa {
+.bank_cards {
   justify-content: center;
 }
-.visa *{
+.visa, .mastercard {
   padding: 0 10px;
 }
 .map, .police {
