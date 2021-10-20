@@ -482,7 +482,9 @@ h1 {
 .watch_text {
   
 }
-
+.watch:hover {
+  box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
+}
 /*additional_content*/
 .add_content {
   width: 1114px;
@@ -529,13 +531,12 @@ h1 {
   background: #F7F7FA;
   flex-direction: column;
   align-items: flex-end;
-  margin: 0 auto;
 }
 .info, .horizont_line, .last_line {
   display: flex;
   justify-content: space-between;
   width: 1114px;  
-  margin-right: 170px; 
+  margin-right: 214px; 
 }
 .info {
   margin-bottom: 30px;
@@ -591,21 +592,26 @@ h2 {
   background: #E6E6EA;
   margin-bottom: 0px;
 }
+.mail {
+  margin-right: 10px;
+}
 .email_wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.vertical, .program, .add_store {
-  padding: 5px 0;
+.mail_form, .program, .add_store {
   width: 33%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.email {
-  padding: 12px;
+.subscribe_form {
+  width: 50%;
+  padding: 10px;
+  background: #E6E6EA;
+  border: none;
 } 
 .subscribe {
   border: 1px solid #9DC2FF;
@@ -615,6 +621,7 @@ h2 {
   padding: 10px 30px;
 }
 .program, .add_store {
+  padding: 15px 0px;
   border-left: 1px solid #D1D1E1;
   justify-content: center;
 }
