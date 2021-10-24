@@ -1,5 +1,6 @@
 @import "./normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
 body {
   max-width: 1920px;
   margin: 0 auto;
@@ -15,7 +16,7 @@ a  {
   color: black;
 }
  a:hover {
-  opacity: 0.85;
+  opacity: 0.75;
  }
 select  {
   cursor: pointer;
@@ -28,6 +29,7 @@ ul {
 p {
   margin: 0;
 }
+
 /*HEADER*/ 
 
 .main_header {
@@ -159,7 +161,7 @@ p {
   margin-bottom: 40px;
   padding: 0;
 }
-.nav_img {
+.nav_icon {
   max-width: 20px;
   max-height: 18px;
   padding: 10px 5px 0 5px;
@@ -255,6 +257,7 @@ p {
 }
 .category_link {
   padding: 4px 10px 4px 28px;
+  color: #19191D;
 }
 .category_button {
   display: flex;
@@ -314,6 +317,7 @@ p {
   border-radius: 4px;
   padding: 6px 8px;
   margin-bottom: 28px;
+  cursor:pointer;
 }
 .colapsed_filters_arrow:after {
   content: url(../img/icons/chevron-down_blue.svg);
@@ -331,6 +335,7 @@ p {
 .manufacturing_filter_title, .expanded_filter_title {
   font-weight: 500;
   letter-spacing: 0.022em; 
+  cursor: default;
 }
 .filter_list {
   padding-top: 15px;
@@ -339,10 +344,15 @@ p {
   padding: 11px;
   display: flex;
 }
+
 .checkbox_label{
   margin-right: 10px;
   min-width: 18px;
   min-height: 18px;
+  cursor:pointer;
+}
+.filter_label:hover {
+  cursor:pointer;
 }
 
 
@@ -381,7 +391,7 @@ p {
   border: 1px solid #B4B4BB;
   border-radius: 4px;
   color: #787885;
-  padding-right: 10px;
+  padding-right: 7px;
 }
 .active_select {
   font-weight: 500;
@@ -406,9 +416,9 @@ p {
   position: absolute;
   font-size: 10px;
   top: -9px;
-  left: 8px;
+  left: 9px;
   background: #ffff;
-  padding: 2px 4px;
+  padding: 4px 4px;
   color: #787885;
   letter-spacing: 1.5px;
   cursor: default;
@@ -475,6 +485,7 @@ p {
   letter-spacing: 0.018em;
   background: #EDEDF0; 
   color: #4A4B57;
+  white-space: nowrap;
 }
 
 /*content*/
@@ -556,12 +567,16 @@ p {
 }
 .stars {
   display: flex;
+  padding: 0px 3px;
+}
+.star {
+  padding: 0 1px;
 }
 .rating {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  padding: 0 5px;
+  padding: 2px 10px;
   color: #5E6366;
 }
 .watch {
@@ -637,6 +652,7 @@ p {
   text-transform: uppercase;
   color: #B1B1C4;
   padding: 16px 0;
+  cursor: default;
 }
 .customer {
   display: flex;
@@ -656,6 +672,7 @@ p {
 }
 .phone_number {
   margin-bottom: 8px;
+  cursor: default;
 }
 .call, .support {
   font-weight: bold;
@@ -664,6 +681,7 @@ p {
 }
 .support_email {
   margin-bottom: 8px;
+  cursor: default;
 }
 .tracking_wrapper {
   display: flex;
@@ -708,6 +726,7 @@ margin-bottom: 23px;
   font-weight: normal;
   font-size: 12px;
   color: #5A5B6A;
+  cursor: default;
 }
 .footer_callback_wrapper {
   display: inline-flex;
