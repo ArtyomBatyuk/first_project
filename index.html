@@ -31,13 +31,7 @@
         </li>
       </ul>
       <div class="search">
-          <svg class="search_loupe" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.5 0C8.22391 0 9.87721 0.684819 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5C13 8.11 12.41 9.59 11.44 10.73L11.71 11H12.5L17.5 16L16 17.5L11 12.5V11.71L10.73 11.44C9.59 12.41 8.11 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.684819 9.87721 0 8.22391 0 6.5C0 4.77609 0.684819 3.12279 1.90381 1.90381C3.12279 0.684819 4.77609 0 6.5 0ZM6.5 2C4 2 2 4 2 6.5C2 9 4 11 6.5 11C9 11 11 9 11 6.5C11 4 9 2 6.5 2Z" fill="#787885"/>
-          </svg>
-        <input type="text" placeholder="useless items on white background">
-          <svg class="search_clean" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#2979FF"/>
-          </svg>
+        <input class="search_line" type="text" placeholder="useless items on white background">
       </div>
       <a href="" class="consumer">Consumer Electronics</a>
       <div class="user_nav">
@@ -46,8 +40,8 @@
           <span>My cart</span>
           <span class="notifications">5</span>
         </a>
-        <a href="" class="avatar">
-          <img src="./img/avatar.png" alt="">
+        <a href="" class="avatar_link">
+          <img class="avatar" src="./img/avatar.png" alt="">
         </a>
       </div>
     </header>
@@ -223,7 +217,7 @@
                 </ul>
               </li>
             </ul> 
-            <li class="category">  
+            <li class="category_main">  
               <ul class="categories">
                 <li class="category">
                   <span class="category_wrapper arrow_right">
@@ -232,7 +226,7 @@
                 </li>
               </ul>
             </li>
-            <li class="category">  
+            <li class="category_main">  
               <ul class="categories">
                 <li class="category">
                   <span class="category_wrapper arrow_right">
@@ -244,7 +238,7 @@
                 </li>
               </ul>
             </li>
-            <li class="category">  
+            <li class="category_main">  
               <ul class="categories">
                 <li class="category">
                   <span class="category_wrapper arrow_right">
@@ -253,7 +247,7 @@
                 </li>
               </ul>
             </li>
-            <li class="category">  
+            <li class="category_main">  
               <ul class="categories">
                 <li class="category">
                   <span class="category_wrapper arrow_right">
@@ -262,7 +256,7 @@
                 </li>
               </ul>
             </li>
-            <li class="category">  
+            <li class="category_main">  
               <ul class="categories">
                 <li class="category">
                   <span class="category_wrapper arrow_right">
@@ -271,7 +265,7 @@
                 </li>
               </ul>
             </li>
-            <li class="category">  
+            <li class="category_main">  
               <ul class="categories">
                 <li class="category_button">
                   <a href="" class='expand'>
@@ -370,13 +364,8 @@
                   <div class="select active_select">
                     <span class="sort_by">SORT BY</span>
                     <select class="filter_selector">
-                      <option>
-                        <span class="useless_first">Useless first</span>
-                      </option>
+                      <option>Useless first</option>
                     </select>
-                      <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0L5 5L10 0L0 0Z" fill="#787885"/>
-                      </svg>                      
                   </div>  
                   <div class="select">
                     <select class="filter_selector">
@@ -384,9 +373,6 @@
                         <span class="condition">Condition</span> 
                       </option>
                     </select>
-                      <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0L5 5L10 0L0 0Z" fill="#787885"/>
-                      </svg>                      
                   </div>  
                   <div class="select">
                     <select class="filter_selector">
@@ -394,9 +380,6 @@
                         <span class="delivery">Delivery options</span>
                       </option>
                     </select>
-                      <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0L5 5L10 0L0 0Z" fill="#787885"/>
-                      </svg>                      
                   </div>  
                 </div>
                 <div class="right_filter">
@@ -422,31 +405,31 @@
               <div class="related_wrapper">
                 <span class='related'>Related</span>
                 <ul class='related_list'>
-                  <li>
-                    <a class="related_text">worldwide shipping</a>
+                  <li class="related_item">
+                    <a href="" class="related_text">worldwide shipping</a>
                   </li>
-                  <li>
-                    <a class="related_text">under $50</a>
+                  <li class="related_item">
+                    <a href="" class="related_text">under $50</a>
                   </li>
-                  <li>
-                    <a class="related_text">kitten</a>
+                  <li class="related_item">
+                    <a href="" class="related_text">kitten</a>
                   </li>
-                  <li>
-                    <a class="related_text">plastic plugs</a>
+                  <li class="related_item">
+                    <a href="" class="related_text">plastic plugs</a>
                   </li>
-                  <li>
-                    <a class="related_text">pucker shoes</a>
+                  <li class="related_item">
+                    <a href="" class="related_text">pucker shoes</a>
                   </li>
-                  <li>
-                    <a class="related_text">vintage typewriter</a>
+                  <li class="related_item">
+                    <a href="" class="related_text">vintage typewriter</a>
                   </li>
                 </ul> 
               </div>
             </div>
             <div class="content">
               <div class="card">
-                <div class="img">
-                  <img src="./img/images/1.png" alt="">
+                <div class="img_holder">
+                  <img class="card_img" src="./img/images/1.png" alt="">
                 </div>
                 <span class="product_descr">Vintage Typewriter to post awesome stories about UI design and webdev.</span>
                 <span class="price_wrapper">
@@ -480,7 +463,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.05</span>
                   </div>
                     <a href="" class="watch">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -498,7 +481,10 @@
                 <span class="price_wrapper">
                   <span class="product_price">$13.95</span>
                 </span>
-                <span class="additional_line card_descr">1258 bids, 359 watchers $5.95 for shipping</span>
+                <span class="additional_line card_descr">
+                  <span>1258 bids, 359 watchers</span> 
+                  <span class="modif_bold">$5.95 for shipping</span>
+                </span>
                 <div class="rating_wrapper">
                   <div class="stars">
                     <span class="star">
@@ -574,7 +560,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.87</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -623,7 +609,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.99</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -635,7 +621,7 @@
                     </a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card modif_margin">
                 <div class="img">
                   <img src="./img/images/5.png" alt="">
                 </div>
@@ -671,7 +657,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.99</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -683,7 +669,7 @@
                     </a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card modif_margin">
                 <div class="img">
                   <img src="./img/images/6.png" alt="">
                 </div>
@@ -719,7 +705,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.87</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -731,7 +717,7 @@
                     </a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card modif_margin">
                 <div class="img">
                   <img src="./img/images/7.png" alt="">
                 </div>
@@ -739,7 +725,10 @@
                 <span class="price_wrapper">
                   <span class="product_price">$13.95</span>
                 </span>
-                <span class="additional_line card_descr">1258 bids, 359 watchers $5.95 for shipping</span>
+                <span class="additional_line card_descr">
+                  <span>1258 bids, 359 watchers</span> 
+                  <span class="modif_bold">$5.95 for shipping</span>
+                </span>
                 <div class="rating_wrapper">
                   <div class="stars">
                     <span class="star">
@@ -779,7 +768,7 @@
                     </a>
                   </div>
               </div>
-              <div class="card">
+              <div class="card modif_margin">
                 <div class="img">
                   <img src="./img/images/8.png" alt="">
                 </div>
@@ -815,7 +804,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.77</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -827,7 +816,7 @@
                     </a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card modif_no_margin">
                 <div class="img">
                   <img src="./img/images/9.png" alt="">
                 </div>
@@ -863,7 +852,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.87</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -875,7 +864,7 @@
                     </a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card modif_no_margin">
                 <div class="img">
                   <img src="./img/images/10.png" alt="">
                 </div>
@@ -911,7 +900,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.99</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -923,7 +912,7 @@
                     </a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card modif_no_margin">
                 <div class="img">
                   <img src="./img/images/11.png" alt="">
                 </div>
@@ -960,7 +949,7 @@
                         <path d="M6.00004 8.27177V2.85442L6.94633 5.20194L9.37016 5.41747L7.53292 7.10093L8.08077 9.59407L6.00004 8.27177ZM11.5339 4.68351L7.55505 4.32817L6.00004 0.466125L4.44503 4.32817L0.466187 4.68351L3.48214 7.43878L2.58012 11.5338L6.00004 9.36107L9.41996 11.5338L8.51241 7.43878L11.5339 4.68351Z" fill="#FB8200"/>
                       </svg>                          
                     </span>
-                    <span class="rating">4.56</span>
+                    <span class="rating">4.77</span>
                   </div>
                     <a href="" class="watch">
                       <span class="watch_icon">
@@ -972,7 +961,7 @@
                     </a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card modif_no_margin">
                 <div class="img">
                   <img src="./img/images/12.png" alt="">
                 </div>
@@ -980,7 +969,10 @@
                 <span class="price_wrapper">
                   <span class="product_price">$23.25</span>
                 </span>
-                <span class="additional_line card_descr">1258 bids, 359 watchers $5.95 for shipping</span>
+                <span class="additional_line card_descr">
+                  <span>1258 bids, 359 watchers</span> 
+                  <span class="modif_bold">$5.95 for shipping</span>
+                </span>
                 <div class="rating_wrapper">
                   <div class="stars">
                     <span class="star">
@@ -1024,23 +1016,29 @@
           </div>
           <div class="sub_content">
             <div class="sub_wrapper">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M38 20H44V24H38V20ZM0 20H6V24H0V20ZM24 0V6H20V0H24ZM7.84 5L12.1 9.28L9.26 12.1L5 7.86L7.84 5ZM31.9 9.26L36.14 5L39 7.86L34.74 12.1L31.9 9.26ZM22 10C25.1826 10 28.2348 11.2643 30.4853 13.5147C32.7357 15.7652 34 18.8174 34 22C34 26.44 31.58 30.32 28 32.4V36C28 36.5304 27.7893 37.0391 27.4142 37.4142C27.0391 37.7893 26.5304 38 26 38H18C17.4696 38 16.9609 37.7893 16.5858 37.4142C16.2107 37.0391 16 36.5304 16 36V32.4C12.42 30.32 10 26.44 10 22C10 18.8174 11.2643 15.7652 13.5147 13.5147C15.7652 11.2643 18.8174 10 22 10ZM26 40V42C26 42.5304 25.7893 43.0391 25.4142 43.4142C25.0391 43.7893 24.5304 44 24 44H20C19.4696 44 18.9609 43.7893 18.5858 43.4142C18.2107 43.0391 18 42.5304 18 42V40H26ZM20 34H24V29.74C27.46 28.86 30 25.72 30 22C30 19.8783 29.1571 17.8434 27.6569 16.3431C26.1566 14.8429 24.1217 14 22 14C19.8783 14 17.8434 14.8429 16.3431 16.3431C14.8429 17.8434 14 19.8783 14 22C14 25.72 16.54 28.86 20 29.74V34Z" fill="#65B168"/>
-              </svg>
+              <span class="sub_ico">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M38 20H44V24H38V20ZM0 20H6V24H0V20ZM24 0V6H20V0H24ZM7.84 5L12.1 9.28L9.26 12.1L5 7.86L7.84 5ZM31.9 9.26L36.14 5L39 7.86L34.74 12.1L31.9 9.26ZM22 10C25.1826 10 28.2348 11.2643 30.4853 13.5147C32.7357 15.7652 34 18.8174 34 22C34 26.44 31.58 30.32 28 32.4V36C28 36.5304 27.7893 37.0391 27.4142 37.4142C27.0391 37.7893 26.5304 38 26 38H18C17.4696 38 16.9609 37.7893 16.5858 37.4142C16.2107 37.0391 16 36.5304 16 36V32.4C12.42 30.32 10 26.44 10 22C10 18.8174 11.2643 15.7652 13.5147 13.5147C15.7652 11.2643 18.8174 10 22 10ZM26 40V42C26 42.5304 25.7893 43.0391 25.4142 43.4142C25.0391 43.7893 24.5304 44 24 44H20C19.4696 44 18.9609 43.7893 18.5858 43.4142C18.2107 43.0391 18 42.5304 18 42V40H26ZM20 34H24V29.74C27.46 28.86 30 25.72 30 22C30 19.8783 29.1571 17.8434 27.6569 16.3431C26.1566 14.8429 24.1217 14 22 14C19.8783 14 17.8434 14.8429 16.3431 16.3431C14.8429 17.8434 14 19.8783 14 22C14 25.72 16.54 28.86 20 29.74V34Z" fill="#65B168"/>
+                </svg>
+              </span>
               <span class="clear_usable">Clear & Usable user flows</span>
               <span class="additional_line">Let’s boost yout marketplace</span>
             </div>
             <div class="sub_wrapper">
-              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.005 7.2L8.005 10L10.805 5L8.005 0L13.005 2.8L18.005 0L15.205 5L18.005 10L13.005 7.2ZM37.005 26.8L42.005 24L39.205 29L42.005 34L37.005 31.2L32.005 34L34.805 29L32.005 24L37.005 26.8ZM42.005 0L39.205 5L42.005 10L37.005 7.2L32.005 10L34.805 5L32.005 0L37.005 2.8L42.005 0ZM24.685 21.56L29.565 16.68L25.325 12.44L20.445 17.32L24.685 21.56ZM26.745 10.58L31.425 15.26C32.205 16 32.205 17.3 31.425 18.08L8.085 41.42C7.305 42.2 6.005 42.2 5.265 41.42L0.585 36.74C-0.195 36 -0.195 34.7 0.585 33.92L23.925 10.58C24.705 9.8 26.005 9.8 26.745 10.58Z" fill="#7985CB"/>
-              </svg>                
+              <span class="sub_ico">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.005 7.2L8.005 10L10.805 5L8.005 0L13.005 2.8L18.005 0L15.205 5L18.005 10L13.005 7.2ZM37.005 26.8L42.005 24L39.205 29L42.005 34L37.005 31.2L32.005 34L34.805 29L32.005 24L37.005 26.8ZM42.005 0L39.205 5L42.005 10L37.005 7.2L32.005 10L34.805 5L32.005 0L37.005 2.8L42.005 0ZM24.685 21.56L29.565 16.68L25.325 12.44L20.445 17.32L24.685 21.56ZM26.745 10.58L31.425 15.26C32.205 16 32.205 17.3 31.425 18.08L8.085 41.42C7.305 42.2 6.005 42.2 5.265 41.42L0.585 36.74C-0.195 36 -0.195 34.7 0.585 33.92L23.925 10.58C24.705 9.8 26.005 9.8 26.745 10.58Z" fill="#7985CB"/>
+                </svg>    
+            </span>            
               <span class="styled">Fine & Styled components</span>
               <span class="additional_line">Speed up with Setproduct templates</span>
             </div>
             <div class="sub_wrapper">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M29 18C28.2044 18 27.4413 17.6839 26.8787 17.1213C26.3161 16.5587 26 15.7956 26 15C26 14.2044 26.3161 13.4413 26.8787 12.8787C27.4413 12.3161 28.2044 12 29 12C29.7956 12 30.5587 12.3161 31.1213 12.8787C31.6839 13.4413 32 14.2044 32 15C32 15.7956 31.6839 16.5587 31.1213 17.1213C30.5587 17.6839 29.7956 18 29 18ZM23 10C22.2044 10 21.4413 9.68393 20.8787 9.12132C20.3161 8.55871 20 7.79565 20 7C20 6.20435 20.3161 5.44129 20.8787 4.87868C21.4413 4.31607 22.2044 4 23 4C23.7956 4 24.5587 4.31607 25.1213 4.87868C25.6839 5.44129 26 6.20435 26 7C26 7.79565 25.6839 8.55871 25.1213 9.12132C24.5587 9.68393 23.7956 10 23 10ZM13 10C12.2044 10 11.4413 9.68393 10.8787 9.12132C10.3161 8.55871 10 7.79565 10 7C10 6.20435 10.3161 5.44129 10.8787 4.87868C11.4413 4.31607 12.2044 4 13 4C13.7956 4 14.5587 4.31607 15.1213 4.87868C15.6839 5.44129 16 6.20435 16 7C16 7.79565 15.6839 8.55871 15.1213 9.12132C14.5587 9.68393 13.7956 10 13 10ZM7 18C6.20435 18 5.44129 17.6839 4.87868 17.1213C4.31607 16.5587 4 15.7956 4 15C4 14.2044 4.31607 13.4413 4.87868 12.8787C5.44129 12.3161 6.20435 12 7 12C7.79565 12 8.55871 12.3161 9.12132 12.8787C9.68393 13.4413 10 14.2044 10 15C10 15.7956 9.68393 16.5587 9.12132 17.1213C8.55871 17.6839 7.79565 18 7 18ZM18 0C13.2261 0 8.64773 1.89642 5.27208 5.27208C1.89642 8.64773 0 13.2261 0 18C0 22.7739 1.89642 27.3523 5.27208 30.7279C8.64773 34.1036 13.2261 36 18 36C18.7956 36 19.5587 35.6839 20.1213 35.1213C20.6839 34.5587 21 33.7957 21 33C21 32.22 20.7 31.52 20.22 31C19.76 30.46 19.46 29.76 19.46 29C19.46 28.2044 19.7761 27.4413 20.3387 26.8787C20.9013 26.3161 21.6644 26 22.46 26H26C28.6522 26 31.1957 24.9464 33.0711 23.0711C34.9464 21.1957 36 18.6522 36 16C36 7.16 27.94 0 18 0Z" fill="#EF6292"/>
-              </svg>                
+              <span class="sub_ico">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29 18C28.2044 18 27.4413 17.6839 26.8787 17.1213C26.3161 16.5587 26 15.7956 26 15C26 14.2044 26.3161 13.4413 26.8787 12.8787C27.4413 12.3161 28.2044 12 29 12C29.7956 12 30.5587 12.3161 31.1213 12.8787C31.6839 13.4413 32 14.2044 32 15C32 15.7956 31.6839 16.5587 31.1213 17.1213C30.5587 17.6839 29.7956 18 29 18ZM23 10C22.2044 10 21.4413 9.68393 20.8787 9.12132C20.3161 8.55871 20 7.79565 20 7C20 6.20435 20.3161 5.44129 20.8787 4.87868C21.4413 4.31607 22.2044 4 23 4C23.7956 4 24.5587 4.31607 25.1213 4.87868C25.6839 5.44129 26 6.20435 26 7C26 7.79565 25.6839 8.55871 25.1213 9.12132C24.5587 9.68393 23.7956 10 23 10ZM13 10C12.2044 10 11.4413 9.68393 10.8787 9.12132C10.3161 8.55871 10 7.79565 10 7C10 6.20435 10.3161 5.44129 10.8787 4.87868C11.4413 4.31607 12.2044 4 13 4C13.7956 4 14.5587 4.31607 15.1213 4.87868C15.6839 5.44129 16 6.20435 16 7C16 7.79565 15.6839 8.55871 15.1213 9.12132C14.5587 9.68393 13.7956 10 13 10ZM7 18C6.20435 18 5.44129 17.6839 4.87868 17.1213C4.31607 16.5587 4 15.7956 4 15C4 14.2044 4.31607 13.4413 4.87868 12.8787C5.44129 12.3161 6.20435 12 7 12C7.79565 12 8.55871 12.3161 9.12132 12.8787C9.68393 13.4413 10 14.2044 10 15C10 15.7956 9.68393 16.5587 9.12132 17.1213C8.55871 17.6839 7.79565 18 7 18ZM18 0C13.2261 0 8.64773 1.89642 5.27208 5.27208C1.89642 8.64773 0 13.2261 0 18C0 22.7739 1.89642 27.3523 5.27208 30.7279C8.64773 34.1036 13.2261 36 18 36C18.7956 36 19.5587 35.6839 20.1213 35.1213C20.6839 34.5587 21 33.7957 21 33C21 32.22 20.7 31.52 20.22 31C19.76 30.46 19.46 29.76 19.46 29C19.46 28.2044 19.7761 27.4413 20.3387 26.8787C20.9013 26.3161 21.6644 26 22.46 26H26C28.6522 26 31.1957 24.9464 33.0711 23.0711C34.9464 21.1957 36 18.6522 36 16C36 7.16 27.94 0 18 0Z" fill="#EF6292"/>
+                </svg>    
+            </span>            
               <span class="customize">Customizable & Reusable</span>
               <span class="additional_line">Take our UX patterns and rebuild</span>
             </div>
@@ -1049,31 +1047,31 @@
     <footer class="main_footer">
       <div class="info">
         <div class="customer">
-          <h2>Customer</h2>
+          <h2 class="footer_title">Customer</h2>
           <ul class="customer_list">
-            <li>
+            <li class="customer_item">
               <a href="">About</a>
             </li>
-            <li>
+            <li class="customer_item">
               <a href="">Delivery</a>
             </li>
-            <li>
+            <li class="customer_item">
               <a href="">Guarantee</a>
             </li>
-            <li>
+            <li class="customer_item">
               <a href="">FAQ</a>
             </li>
-            <li>
+            <li class="customer_item">
               <a href="">Contacts</a>
             </li>
           </ul>
           <div class="contacts">
             <div class="call">
-              <span>0 800 500 19 10</span>
+              <p class="phone_number">0 800 500 19 10</p>
               <p class="footer_sub_line">Free call. 9 AM - 9 PM</p>
             </div>
             <div class="support">
-              <span>support@shopka.com</span>
+              <p class="support_email">support@shopka.com</p>
               <p class="footer_sub_line">Any questions 24/7</p>
             </div>
             <div class="tracking_wrapper">
@@ -1081,35 +1079,35 @@
                 <span> Track your order</span>
               </a>
             </div>
-            <div class="facebook">
-              <a href="">
-                <img src="./img/icons/Facebook.png" alt="">
+            <div class="socials">
+              <a href="" class="socials_link facebook">
+                <img class="social_icon" src="./img/icons/Facebook.png" alt="">
               </a>
-            </div>
-            <div class="twitter">
-              <a href="">
-                <img src="./img/icons/Twitter.png" alt="">
+              <a href="" class="socials_link twitter">
+                <img class="social_icon" src="./img/icons/Twitter.png" alt="">
               </a>
             </div>
           </div>
         </div>
         <div class="business">
-          <h2>Business</h2>
-          <span class="cooperation">Cooperation</span>
+          <h2 class="footer_title">Business</h2>
+          <a href="" class="cooperation">
+            <span>Cooperation</span>
+          </a>
           <div class="contacts">
             <div class="call">
-              <span>0 800 777 70 07</span>
+              <p class="phone_number">0 800 777 70 07</p>
               <p class="footer_sub_line">Free call. 9 AM - 9 PM</p>
             </div>
             <div class="support">
-              <span>for-biz@shopka.com</span>
+              <p class="support_email">for-biz@shopka.com</p>
               <p class="footer_sub_line">business discussion</p>
             </div>  
           </div>
         </div>
       </div>
-      <div class="horizont_wrapper">
-        <div class="horizont_line">
+      <div class="footer_callback_wrapper">
+        <div class="footer_callback">
           <div class="email_wrapper">
             <div class="mail_form">
               <span class="mail">
@@ -1127,24 +1125,24 @@
               </form>
             </div>
             <div class="program">
-              <a href="">Affiliate program</a>
+              <a href="" class="program_link">Affiliate program</a>
             </div>
             <div class="add_store">
-              <a href="">Add your store</a>
+              <a href="" class="store_link">Add your store</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="last_line">
+      <div class="footer_info">
         <div class="shopka">
           <span>Shopka © 2011  All rights reserved</span>
         </div>
         <div class="bank_cards">
           <a href="" class="visa">
-            <img src="./img/images/visa.png" alt="">
+            <img class="bank_logo" src="./img/images/visa.png" alt="">
           </a>
           <a href=""  class="mastercard">
-            <img src="./img/images/mastercard.png" alt="">
+            <img class="bank_logo" src="./img/images/mastercard.png" alt="">
           </a>
         </div>
         <div class="privacy">
