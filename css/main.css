@@ -40,8 +40,9 @@ ul {
 
 /*head nav*/
 .sell_register {
-  margin-right: 78px;
+  margin-right: auto;
   padding: 10px;
+  white-space: nowrap;
 }
 .sell_shopka, .register, .search_bar, .search input {
   text-decoration: none;
@@ -54,6 +55,7 @@ ul {
 .sell_shopka {
   font-weight: 500;
   letter-spacing: 0.004em;
+  white-space: nowrap;
 }
 .register {
   letter-spacing: 0.0075em;
@@ -83,8 +85,9 @@ ul {
   font-size: 20px;
   color: #2264D1; 
   letter-spacing: 0.0075em;
-  margin-right: 67px;
-  padding: 0 34px;
+  margin-right: auto;
+  padding: 10px 34px;
+  white-space: nowrap;
 }
 
 /*user_nav*/
@@ -100,6 +103,7 @@ ul {
   font-size: 20px;
   border-radius: 4px;
   text-align: center;
+  white-space: nowrap;
 }
 .sign_in {
   border: 1px solid #9DC2FF;
@@ -186,7 +190,7 @@ ul {
   letter-spacing: 0.0275em;
   color: #19191D;
 }
-h1 {
+.aside_title {
   display: flex;
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -202,37 +206,46 @@ h1 {
 .departments_text {
   padding: 0px 35px;
 }
-.categories {
+.categories_list {
   margin-bottom: 32px;
 }
-.menu {
-  padding: 10px;
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+.category {
+  display: flex;
+  padding: 5px 10px;
+  flex-direction: column;
 }
 .item {
-  padding-left: 10px;
   cursor: pointer;
+}
+.category_wrapper {
+  display: flex;
+  align-items: center;
+}
+.arrow_right:before {
+  content: url(../img/icons/chevron-right_blue.svg)
+}
+.arrow_down:before {
+  content: url(../img/icons/chevron-down_blue.svg)
+}
+.category_link {
+  padding: 4px 10px 4px 23px;
+}
+.category_button {
+  display: flex;
+  padding-left: 33px;
 }
 .bold_text {
   font-weight: 500;
   letter-spacing: 0.022em;
 }
-.expand_wrapper {
-  padding: 5px 40px;
-}
 .additional_line {
   font-size: 14px;
   letter-spacing: 0.018em;
   color: #787885;
-}
-.category, .category_list {
-  display: flex;
-  padding: 5px 0;
-}
-.category_list {
-  padding: 5px 10px;
-}
-.electronics {
-  padding-left: 10px;
 }
 .line_wrapper {
   display: flex;
@@ -256,8 +269,12 @@ h1 {
   max-width: 138px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 12px 5px;
+  padding: 2px 13px;
+}
+.show_more:after {
+  content:url(../img/icons/chevron-down.svg);
+  padding-left: 7px;
+  padding-top: 3px;
 }
 .expand {
   padding: 12px 12px;
@@ -275,13 +292,10 @@ h1 {
   padding: 6px 8px;
   margin-bottom: 28px;
 }
-.collapsed_filters_text {
-  padding: 4px 0;
+.colapsed_filters_arrow:after {
+  content: url(../img/icons/chevron-down_blue.svg);
+  padding-top: 11px;
 }
-.colapsed_filters_arrow {
-  padding: 0 11px;
-}
-
 .expanded_filter, .manufacturing_filter {
   color: #19191D; 
   background: #F7F7FA;
@@ -291,19 +305,17 @@ h1 {
 .expanded_filter {
   margin-bottom: 24px;
 }
-.manufacturing_filter_heading, .expanded_filter_heading {
+.manufacturing_filter_title, .expanded_filter_title {
   font-weight: 500;
-  letter-spacing: 0.022em;
+  letter-spacing: 0.022em; 
+}
+.list_item {
+  padding: 10px;
 }
 .checkbox_label{
   margin-right: 10px;
 }
-.expanded_filter_menu {
-  letter-spacing: 0.0275em;
-}
-.manufacturing_filter {
 
-}
 
 /*CONTENT BAR*/
 
